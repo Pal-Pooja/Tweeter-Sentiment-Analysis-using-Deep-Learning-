@@ -4,7 +4,7 @@ import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 #Loading the tensorflow model for prediction
-model=load_model("model.h5")
+model=load_model("model.h5",compile=False)
 
 with open("token.pkl","rb")as file:
     tokenizer=pickle.load(file)
